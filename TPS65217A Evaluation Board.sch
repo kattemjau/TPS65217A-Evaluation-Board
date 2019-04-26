@@ -2842,7 +2842,6 @@ JST PH 2-pin thru-home side entry</description>
 <part name="SYS" library="marius" deviceset="TEST_TESTPOINT" device="" package3d_urn="urn:adsk.eagle:package:5911110/1"/>
 <part name="PWR_EN" library="marius" deviceset="TEST_TESTPOINT" device="" package3d_urn="urn:adsk.eagle:package:5911110/1"/>
 <part name="NRESET" library="marius" deviceset="TEST_TESTPOINT" device="" package3d_urn="urn:adsk.eagle:package:5911110/1"/>
-<part name="PB_IN" library="marius" deviceset="TEST_TESTPOINT" device="" package3d_urn="urn:adsk.eagle:package:5911110/1"/>
 <part name="LDO1V8" library="marius" deviceset="TEST_TESTPOINT" device="" package3d_urn="urn:adsk.eagle:package:5911110/1"/>
 <part name="LDO3V3" library="marius" deviceset="TEST_TESTPOINT" device="" package3d_urn="urn:adsk.eagle:package:5911110/1"/>
 <part name="MUX" library="marius" deviceset="TEST_TESTPOINT" device="" package3d_urn="urn:adsk.eagle:package:5911110/1"/>
@@ -3022,9 +3021,6 @@ JST PH 2-pin thru-home side entry</description>
 </instance>
 <instance part="NRESET" gate="G$1" x="22.86" y="12.7" smashed="yes" rot="R180">
 <attribute name="NAME" x="17.018" y="12.7" size="1.778" layer="95" rot="R180" align="center-left"/>
-</instance>
-<instance part="PB_IN" gate="G$1" x="25.4" y="-27.94" smashed="yes" rot="R180">
-<attribute name="NAME" x="19.558" y="-27.94" size="1.778" layer="95" rot="R180" align="center-left"/>
 </instance>
 <instance part="LDO1V8" gate="G$1" x="147.32" y="-17.78" smashed="yes" rot="R270">
 <attribute name="NAME" x="147.32" y="-23.622" size="1.778" layer="95" rot="R270" align="center-left"/>
@@ -3280,14 +3276,6 @@ JST PH 2-pin thru-home side entry</description>
 <label x="142.24" y="-58.42" size="1.27" layer="95" align="bottom-right"/>
 <pinref part="L1" gate="A" pin="2"/>
 <wire x1="137.16" y1="-58.42" x2="152.4" y2="-58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="PB_IN" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="PB_IN"/>
-<wire x1="35.56" y1="-27.94" x2="25.4" y2="-27.94" width="0.1524" layer="91"/>
-<label x="27.94" y="-27.94" size="1.27" layer="95"/>
-<pinref part="PB_IN" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="NWAKEUP" class="0">
