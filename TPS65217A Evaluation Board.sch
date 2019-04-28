@@ -2994,6 +2994,8 @@ WR-COM_USB_Micro Type B_Horizontal_SMT Micro Type B Horizontal SMT - 3A current 
 <part name="MUX" library="marius" deviceset="TEST_TESTPOINT" device="" package3d_urn="urn:adsk.eagle:package:5911110/1"/>
 <part name="CN1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="JST_2PIN" device="-SMT-RA" package3d_urn="urn:adsk.eagle:package:6240692/1"/>
 <part name="J1" library="InputOutputIO (rev19a)" deviceset="629105150521" device=""/>
+<part name="LDO4" library="marius" deviceset="TEST_TESTPOINT" device="" package3d_urn="urn:adsk.eagle:package:5911110/1"/>
+<part name="LDO3" library="marius" deviceset="TEST_TESTPOINT" device="" package3d_urn="urn:adsk.eagle:package:5911110/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -3187,6 +3189,12 @@ WR-COM_USB_Micro Type B_Horizontal_SMT Micro Type B Horizontal SMT - 3A current 
 <attribute name="NAME" x="-63.5" y="27.432" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-63.5" y="52.07" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="LDO4" gate="G$1" x="149.86" y="63.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="149.86" y="69.342" size="1.778" layer="95" rot="R90" align="center-left"/>
+</instance>
+<instance part="LDO3" gate="G$1" x="142.24" y="58.42" smashed="yes" rot="R90">
+<attribute name="NAME" x="142.24" y="64.262" size="1.778" layer="95" rot="R90" align="center-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3274,19 +3282,23 @@ WR-COM_USB_Micro Type B_Horizontal_SMT Micro Type B Horizontal SMT - 3A current 
 <junction x="144.78" y="63.5"/>
 <pinref part="C23" gate="G$1" pin="2"/>
 <wire x1="144.78" y1="60.96" x2="160.02" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="LDO4" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="LDO3" class="0">
 <segment>
 <pinref part="GND" gate="A" pin="LS1_OUT"/>
-<wire x1="137.16" y1="58.42" x2="144.78" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="58.42" x2="142.24" y2="58.42" width="0.1524" layer="91"/>
 <label x="147.32" y="58.42" size="1.27" layer="95" align="bottom-right"/>
 <label x="149.86" y="58.42" size="1.27" layer="95" xref="yes"/>
+<wire x1="142.24" y1="58.42" x2="144.78" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="58.42" x2="149.86" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="58.42" x2="144.78" y2="55.88" width="0.1524" layer="91"/>
 <junction x="144.78" y="58.42"/>
 <pinref part="C22" gate="G$1" pin="2"/>
 <wire x1="144.78" y1="55.88" x2="167.64" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="LDO3" gate="G$1" pin="2"/>
+<junction x="142.24" y="58.42"/>
 </segment>
 </net>
 <net name="MUX_OUT" class="0">

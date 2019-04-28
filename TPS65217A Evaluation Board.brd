@@ -3,7 +3,7 @@
 <eagle version="9.3.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="mm" altunit="mm"/>
@@ -185,6 +185,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyOTQ3ODVk" projecturn="a.cGVyc29uYWw6dWUyOTQ3ODVkIzIwMTgwODE1MTQ0MTI2NzUx" f3durn="urn:adsk.wipprod:dm.lineage:44Vuc7aUT0mz-DZkzW1-Yg" pcbguid="8762834f-3f7f-4e23-9605-112ef1adf8f7" lastpulledtime="" lastsyncedchangeguid="2bec2dfb-6afe-e8ac-4bb2-5b1c546bf32b"/>
 <plain>
 <polygon width="0.1524" layer="46">
 <vertex x="44.34" y="61.02"/>
@@ -1901,6 +1902,14 @@ design rules under a new name.</description>
 <attribute name="NAME" x="52.8056" y="39.1516" size="1.27" layer="25" font="vector" ratio="13" rot="SR270" align="bottom-center"/>
 <attribute name="VALUE" x="42.15" y="42.5516" size="1.27" layer="27" font="vector" ratio="13" rot="SR270"/>
 </element>
+<element name="LDO4" library="marius" package="TEST_TESTPOINT" package3d_urn="urn:adsk.eagle:package:5911110/1" value="TEST_TESTPOINT" x="68" y="58" smashed="yes">
+<attribute name="NAME" x="68.635" y="58" size="0.7" layer="25" align="center-left"/>
+<attribute name="X" value="X" x="68" y="58" size="1.778" layer="27" display="off"/>
+</element>
+<element name="LDO3" library="marius" package="TEST_TESTPOINT" package3d_urn="urn:adsk.eagle:package:5911110/1" value="TEST_TESTPOINT" x="72.25" y="58" smashed="yes">
+<attribute name="NAME" x="72.885" y="58" size="0.7" layer="25" align="center-left"/>
+<attribute name="X" value="X" x="72.25" y="58" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="VUSB">
@@ -2004,6 +2013,11 @@ design rules under a new name.</description>
 <wire x1="65.7788" y1="50.65939375" x2="65.7788" y2="51.7788" width="0.2" layer="1"/>
 <wire x1="66.78" y1="52.78" x2="66.78" y2="53.61" width="0.2" layer="1"/>
 <wire x1="65.7788" y1="51.7788" x2="66.78" y2="52.78" width="0.2" layer="1"/>
+<contactref element="LDO4" pad="1"/>
+<wire x1="68" y1="57.10815" x2="68" y2="58" width="0.1524" layer="1"/>
+<wire x1="66.78" y1="53.61" x2="67.6614" y2="54.4914" width="0.1524" layer="1"/>
+<wire x1="67.6614" y1="54.4914" x2="67.6614" y2="56.76955" width="0.1524" layer="1"/>
+<wire x1="67.6614" y1="56.76955" x2="68" y2="57.10815" width="0.1524" layer="1"/>
 </signal>
 <signal name="LDO3">
 <contactref element="GND" pad="40"/>
@@ -2013,6 +2027,13 @@ design rules under a new name.</description>
 <wire x1="67.04" y1="50.89819375" x2="67.04" y2="49.965" width="0.2" layer="1"/>
 <wire x1="68.39" y1="52.89" x2="67.1306" y2="51.6306" width="0.2" layer="1"/>
 <wire x1="67.1306" y1="51.6306" x2="67.1306" y2="50.98879375" width="0.2" layer="1"/>
+<contactref element="LDO3" pad="1"/>
+<wire x1="72.25" y1="57.47" x2="72.25" y2="58" width="0.1524" layer="1"/>
+<wire x1="71.6368" y1="56.8568" x2="72.25" y2="57.47" width="0.1524" layer="1"/>
+<wire x1="68.39" y1="53.61" x2="69.1314" y2="54.3514" width="0.1524" layer="1"/>
+<wire x1="69.1314" y1="54.3514" x2="69.1314" y2="56.23955" width="0.1524" layer="1"/>
+<wire x1="69.1314" y1="56.23955" x2="69.74865" y2="56.8568" width="0.1524" layer="1"/>
+<wire x1="69.74865" y1="56.8568" x2="71.6368" y2="56.8568" width="0.1524" layer="1"/>
 </signal>
 <signal name="MUX_OUT">
 <contactref element="GND" pad="16"/>
@@ -2398,8 +2419,8 @@ design rules under a new name.</description>
 <wire x1="70" y1="56.25" x2="71.5" y2="56.25" width="0.2" layer="16"/>
 <wire x1="71.5" y1="56.25" x2="77.75" y2="56.25" width="0.2" layer="16"/>
 <wire x1="77.75" y1="56.25" x2="77.75" y2="38.5" width="0.2" layer="16"/>
-<wire x1="77.75" y1="38.5" x2="74.5" y2="35.25" width="0.2" layer="16"/>
-<wire x1="74.5" y1="35.25" x2="70.25" y2="35" width="0.2" layer="16"/>
+<wire x1="77.75" y1="38.5" x2="74.25" y2="35" width="0.2" layer="16"/>
+<wire x1="74.25" y1="35" x2="70.25" y2="35" width="0.2" layer="16"/>
 <wire x1="69.91" y1="55.31" x2="69.91" y2="56.16" width="0.2" layer="1"/>
 <wire x1="69.91" y1="56.16" x2="70" y2="56.25" width="0.2" layer="1"/>
 <via x="70" y="56.25" extent="1-16" drill="0.35"/>
@@ -2454,6 +2475,11 @@ design rules under a new name.</description>
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
 </note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library

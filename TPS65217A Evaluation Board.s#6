@@ -3557,7 +3557,7 @@ WR-COM_USB_Micro Type B_Horizontal_SMT Micro Type B Horizontal SMT - 3A current 
 <wire x1="137.16" y1="-48.26" x2="152.4" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="MILLING" class="0">
 <segment>
 <pinref part="R7" gate="A" pin="1"/>
 <wire x1="5.08" y1="76.2" x2="-2.54" y2="76.2" width="0.1524" layer="91"/>
